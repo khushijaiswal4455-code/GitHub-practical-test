@@ -217,3 +217,9 @@ html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 }
 .navbar a { color: var(--text); text-decoration: none; font-weight: 600; }
 .navbar a:hover { color: var(--accent); }
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
