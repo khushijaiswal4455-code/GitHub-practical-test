@@ -204,6 +204,7 @@ body.dark .to-top { color: #0b111b; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+HEAD
 html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 .navbar {
   position: sticky;
@@ -217,9 +218,13 @@ html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 }
 .navbar a { color: var(--text); text-decoration: none; font-weight: 600; }
 .navbar a:hover { color: var(--accent); }
+
+
+
+/* Footer */
 .footer {
   text-align: center;
-  padding: 1.5rem;
-  color: var(--muted);
+  padding: 2rem 1.5rem;
+  background: var(--surface);
   border-top: 1px solid var(--border);
 }
