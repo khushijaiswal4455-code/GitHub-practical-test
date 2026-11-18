@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of KHUSHI , a computer science student and web developer.">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" id="progress"></div>
+
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <p class="hello" id="greeting"></p>
+      <h1>KHUSHI</h1>
+      <p class="role">I’m a <span id="typed"></span><span class="cursor" aria-hidden="true">|</span></p>
+      <p class="intro">I build small, clear websites and I’m learning to manage every change with Git and GitHub.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+        <button class="btn ghost" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+      </div>
+    </div>
+
+    <div class="terminal" id="terminal" aria-label="Interactive terminal">
+      <div class="term-bar">portfolio.sh</div>
+      <div class="term-body" id="term-output" aria-live="polite"></div>
+      <form class="term-input" id="term-form" autocomplete="off">
+        <label for="term-cmd" class="prompt">visitor@portfolio:~$</label>
+        <input id="term-cmd" type="text" spellcheck="false" autocapitalize="off" aria-label="Type a command">
+      </form>
+      <div class="term-chips">
+        <button type="button" data-cmd="help">help</button>
+        <button type="button" data-cmd="about">about</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="projects">projects</button>
+        <button type="button" data-cmd="contact">contact</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="reveal">
+      <h2>About me</h2>
+      <p>
+        I’m a computer science student in Pune, India. I like turning ideas into
+        working web pages, and I care about the small details that make a site
+        easier to use: readable text, sensible spacing and fast loading.
+      </p>
+      <div class="stats">
+        <div><strong data-count="4">0</strong><span>Projects built</span></div>
+        <div><strong data-count="3">0</strong><span>Languages used</span></div>
+        <div><strong data-count="12">0</strong><span>Commits this month</span></div>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-top"><span>HTML</span><span>90%</span></div>
+        <div class="bar"><span data-level="90"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>CSS</span><span>80%</span></div>
+        <div class="bar"><span data-level="80"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+        <div class="bar"><span data-level="70"></span></div>
+      </div>
+      <div class="skill">
+        <div class="skill-top"><span>Git &amp; GitHub</span><span>65%</span></div>
+        <div class="bar"><span data-level="65"></span></div>
+      </div>
+    </section>
+
+    <section id="journey" class="reveal">
+      <h2>My journey</h2>
+      <ol class="timeline">
+        <li>
+          <h3>Started studying computer science</h3>
+          <p>Learned programming basics and how computers work. (Edit this.)</p>
+        </li>
+        <li>
+          <h3>Built my first web pages</h3>
+          <p>Started with plain HTML, then added CSS and JavaScript. (Edit this.)</p>
+        </li>
+        <li>
+          <h3>Learned Git and GitHub</h3>
+          <p>Practised commits, branches and merges on this portfolio.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip active" type="button" data-filter="all">All</button>
+        <button class="chip" type="button" data-filter="web">Web</button>
+        <button class="chip" type="button" data-filter="app">Apps</button>
+      </div>
+      <div class="project-grid">
+        <article class="project" data-category="web" data-title="Personal portfolio"
+                 data-desc="A responsive one-page portfolio with an interactive terminal, theme toggle, scroll animations and a validated contact form."
+                 data-tech="HTML, CSS, JavaScript" data-link="https://github.com/your-username">
+          <h3>Personal portfolio</h3>
+          <p>This website, built from scratch.</p>
+          <button class="more" type="button">View details</button>
+        </article>
+        <article class="project" data-category="app" data-title="To-do list"
+                 data-desc="Add, complete and delete tasks. Tasks stay saved in the browser. Replace this with your own project."
+                 data-tech="HTML, CSS, JavaScript" data-link="https://github.com/your-username">
+          <h3>To-do list</h3>
+          <p>A simple task tracker.</p>
+          <button class="more" type="button">View details</button>
+        </article>
+        <article class="project" data-category="web" data-title="Recipe page"
+                 data-desc="A responsive page with ingredients, steps and a print-friendly layout. Replace this with your own project."
+                 data-tech="HTML, CSS" data-link="https://github.com/your-username">
+          <h3>Recipe page</h3>
+          <p>A clean, readable layout.</p>
+          <button class="more" type="button">View details</button>
+        </article>
+        <article class="project" data-category="app" data-title="Quiz game"
+                 data-desc="A multiple-choice quiz that tracks your score and shows the right answers. Replace this with your own project."
+                 data-tech="HTML, CSS, JavaScript" data-link="https://github.com/your-username">
+          <h3>Quiz game</h3>
+          <p>Test yourself, see your score.</p>
+          <button class="more" type="button">View details</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <p>Have a question or want to work together? Send a message.</p>
+      <form id="contact-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name">
+        <small class="error" id="name-error"></small>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <small class="error" id="email-error"></small>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <small class="error" id="message-error"></small>
+
+        <button class="btn primary" type="submit">Send message</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+      <p class="links">
+        <button class="btn" id="copy-email" type="button" data-email="yourname@example.com">Copy email address</button>
+        <a href="https://github.com/your-username">github.com/your-username</a>
+      </p>
+    </section>
+  </main>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+    <p><strong>Built with:</strong> <span id="modal-tech"></span></p>
+    <div class="modal-actions">
+      <a class="btn primary" id="modal-link" href="#" target="_blank" rel="noopener">View on GitHub</a>
+      <button class="btn" id="modal-close" type="button">Close</button>
+    </div>
+  </dialog>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
